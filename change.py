@@ -1,5 +1,4 @@
 import open3d as o3d
-import numpy as np
 import sys
 #Ensure the user supplies the name of the file to convert to a .pcd
 if len(sys.argv) < 2:
@@ -11,6 +10,7 @@ else:
     output_file_name = input_file_name[:-3] + "pcd"
     #Set the scale factor for the transformation to a point cloud
     # 0.05 for the Easter Island Statue
+    # 0.00005 for x-35
     scale_factor = 0.05
     #Read the .stl file as a mesh
     mesh = o3d.io.read_triangle_mesh(input_file_name)
