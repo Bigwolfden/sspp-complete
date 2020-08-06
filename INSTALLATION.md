@@ -31,11 +31,10 @@ After running `wstool update`, it will ask if you want to (d)elete and replace, 
 catkin build
 source ~/catkin_ws/devel/setup.bash
 ```
-#### rviz
+#### rviz, CGAL
 The base rviz should be installed already, but the visual tools may not be.
 ```
-sudo apt-get install ros-melodic-rviz
-sudo apt-get install ros-melodic-rviz-visual-tools
+sudo apt-get install ros-melodic-rviz ros-melodic-rviz-visual-tools libcgal-dev
 ```
 #### Octomap world, Catkin Simple eigen_catkin, gflags_catkin, glog_catkin, minkindr, eigen_checks, catkin_boost_python_buildtool, numpy_eigen, minkindr_conversions, octomap_rviz_plugins
 ```
@@ -50,10 +49,6 @@ git clone https://github.com/ethz-asl/catkin_boost_python_buildtool.git
 git clone https://github.com/ethz-asl/numpy_eigen.git
 git clone https://github.com/ethz-asl/minkindr_ros.git
 git clone https://github.com/OctoMap/octomap_rviz_plugins.git
-```
-#### CGAL
-```
-sudo apt-get install libcgal-dev
 ```
 #### Possible Errors
 I.
